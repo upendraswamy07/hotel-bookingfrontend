@@ -72,17 +72,17 @@ export async function getServerSideProps() {
     return {
       props: {
         featuredRooms,
-        error: null,
-      },
+        error: null
+      }
     };
   } catch (err) {
     return {
       props: {
         featuredRooms: null,
         error: {
-          message: err?.message || 'Unknown server error',
-        },
-      },
+          message: err?.message || 'Unknown server error'
+        }
+      }
     };
   }
 }
